@@ -18,16 +18,12 @@ button.onclick = function () {
   }
   else {
     ct++;
-    alert( "você errou!, você tem mais "+(3-ct)+" tentativas");
-   /* alert("O" + nome + ", serve para iniciar o git.você errou!");*/
-    
-   if (ct > 2) {
+    alert("você errou!, você tem mais " + (3 - ct) + " tentativas");
+    /* alert("O" + nome + ", serve para iniciar o git.você errou!");*/
+
+    if (ct > 2) {
       window.location = "aula1.html";
 
     }
   }
-
-
-
-
 }
