@@ -7,15 +7,27 @@
 */
 
 var button = document.querySelector("button");
+var ct = 0
 
 button.onclick = function () {
   var nome = prompt("Qual é o comando para iniciar o git?");
   if ((nome == "git init")) {
     alert("O" + nome + ", serve para iniciar o git.Parabéns você acertou!");
+    window.location = "aula2.html";
+
   }
   else {
-    alert("O" + nome + ", serve para iniciar o git.você errou!");
+    ct++;
+    alert( "você errou!, você tem mais "+(3-ct)+" tentativas");
+   /* alert("O" + nome + ", serve para iniciar o git.você errou!");*/
+    
+   if (ct > 2) {
+      window.location = "aula1.html";
+
+    }
   }
-    window.location="aula2.html";
-  
+
+
+
+
 }
